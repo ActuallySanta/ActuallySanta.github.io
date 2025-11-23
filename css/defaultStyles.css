@@ -1,0 +1,94 @@
+#WebHeader {
+  grid-area: Header;
+  background-color: #e9edc9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#WebHeader h1,
+h2 {
+  text-align: center;
+}
+
+#NavBar {
+  grid-area: Nav;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: sticky;
+  top: 0em;
+  background-color: #fefae0;
+  font-size: large;
+}
+
+#NavList {
+  display: flex;
+  width: 75%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  background-color: #faedcd;
+  padding: 0.5em;
+}
+
+#NavBar ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+}
+
+#InfoFooter {
+  grid-area: Footer;
+  background-color: #fefae0;
+  padding: 1.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #79947d;
+}
+
+a:visited {
+  color: #435245;
+}
+
+a:focus {
+  color: #90c898;
+}
+
+a:hover {
+  color: #237f31;
+}
+
+a:active {
+  color: #ccd5ae;
+}
+
+@media screen and (max-width: 768px) {
+  .NavListText {
+    display: none;
+  }
+
+  #NavList {
+    padding: 0.5em;
+  }
+}

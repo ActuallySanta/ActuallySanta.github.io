@@ -1,0 +1,121 @@
+footer h3 {
+  text-align: center;
+}
+
+#MainWrapper {
+  display: grid;
+  grid-template-columns: 40em 3fr;
+  grid-template-rows: 7.5em 5em 1fr 15em;
+  height: auto;
+  grid-template-areas:
+    "Header Header"
+    "Nav Nav"
+    "ProImage  TextColumns"
+    "Footer Footer";
+}
+
+body {
+  background-color: #ccd5ae;
+}
+
+#HomeImage {
+  grid-area: ProImage;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+#HomeImage > img {
+  margin: 2.5em auto;
+  width: 100%;
+}
+
+#TextColumns {
+  grid-area: TextColumns;
+  display: grid;
+  grid-template-rows: 15em 1fr;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: #d4a373;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+#AboutMeText {
+  font-size: medium;
+}
+
+#ProjectsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5em;
+  margin-right: 4em;
+}
+
+.ProjectItem {
+  background-color: #faedcd;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5em;
+  font-size: large;
+  gap: 20px;
+}
+
+#InfoFooter ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #MainWrapper {
+    grid-template-rows: 15em 5em 65em 1fr 15em;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "Header"
+      "Nav"
+      "ProImage"
+      "TextColumns"
+      "Footer";
+  }
+
+  #WebHeader {
+    font-size: small;
+  }
+
+  #TextColumns {
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "AboutMe"
+      "Projects";
+  }
+
+  #AboutMeCol p {
+    grid-area: AboutMe;
+    font-size: large;
+  }
+
+  #ProjectsCol {
+    grid-area: Projects;
+  }
+
+  .ProjectItemDesc {
+    display: none;
+  }
+
+  .ProjectItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .ProjectItem ul {
+    padding-inline-start: 0;
+    text-align: center;
+    list-style-type: none;
+  }
+}
