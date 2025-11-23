@@ -35,12 +35,12 @@ h2 {
 #NavBar ul {
   list-style-type: none;
 }
-
 body {
   font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  background-color: #ccd5ae;
 }
 
 h1,
@@ -58,7 +58,9 @@ h3 {
   padding: 1.5em;
   text-align: center;
 }
-
+#InfoFooter li {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
 }

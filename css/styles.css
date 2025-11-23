@@ -14,10 +14,6 @@ footer h3 {
     "Footer Footer";
 }
 
-body {
-  background-color: #ccd5ae;
-}
-
 #HomeImage {
   grid-area: ProImage;
   padding: 1em;
@@ -31,9 +27,8 @@ body {
 
 #TextColumns {
   grid-area: TextColumns;
-  display: grid;
-  grid-template-rows: 15em 1fr;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   background-color: #d4a373;
   padding: 1em;

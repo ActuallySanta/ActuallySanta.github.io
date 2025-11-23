@@ -1,8 +1,13 @@
-#ProjectsList {
+#ProjectList {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 15em;
+  flex-direction: row;
+  width: 100%;
+  gap: 1em;
+}
+
+h2,
+h3 {
+  text-align: center;
 }
 
 #MainWrapper {
@@ -18,41 +23,21 @@
     "Footer";
 }
 
+.ProjectsListItemIcon {
+  width: 75%;
+  margin: auto;
+  padding: 1em;
+}
+
 #ContentWrapper {
   grid-area: Content;
 }
 
 .ProjectListItem {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 9fr;
-
-  grid-template-areas:
-    "Title Date"
-    "Description Image";
-
-  background-color: #d4a373;
-  padding: 1em auto;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
-
-.ProjectsListItemTitle {
-  grid-area: Title;
-  margin: 0.5em;
-}
-
 .ProjectsListItemDate {
-  grid-area: Date;
-}
-
-.ProjectListItemDesc {
-  grid-area: Description;
-  margin: 1em;
-}
-
-.ProjectListItemImage {
-  grid-area: Image;
-}
-
-hr {
-  border-color: black;
+  text-align: center;
 }
