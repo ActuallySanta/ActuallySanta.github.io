@@ -66,14 +66,18 @@ footer h3 {
 
 @media screen and (max-width: 768px) {
   #MainWrapper {
-    grid-template-rows: 15em 5em 65em 1fr 15em;
+    /* grid-template-rows: 15em 5em 65em 1fr 15em;
     grid-template-columns: 100%;
     grid-template-areas:
       "Header"
       "Nav"
       "ProImage"
       "TextColumns"
-      "Footer";
+      "Footer"; */
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   #WebHeader {
