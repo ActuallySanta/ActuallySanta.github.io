@@ -1,30 +1,48 @@
 #MainWrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 7.5em 5em 1fr 1fr 2fr;
+  grid-template-rows: 7.5em 5em 1fr 6em;
   grid-template-areas:
     "Header Header"
     "Nav Nav"
-    "Description SplashImage"
-    "Contributions SplashImage"
+    "Game-Info SplashImage"
     "Process Content";
 }
 
+#Game-Info {
+  grid-area: Game-Info;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1em;
+}
+
+#Game-Info > *,
+#Content {
+  background-color: #faedcd;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+}
 #SplashImage {
   grid-area: SplashImage;
-}
-#Project-Description {
-  grid-area: Description;
+  display: flex;
+  flex-flow: column wrap;
+
+  gap: 1.5em;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#Contribution {
-  grid-area: Contributions;
+#SplashImage img {
+  max-width: 50%;
+  height: auto;
 }
-
 #Process {
   grid-area: Process;
 }
 
 #Content {
   grid-area: Content;
+  text-align: center;
 }
