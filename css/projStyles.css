@@ -41,3 +41,31 @@ h3 {
 .ProjectsListItemDate {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  #MainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #WebHeader {
+    font-size: small;
+  }
+
+  #ProjectList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .ProjectListItem {
+    width: 100%;
+  }
+
+  .ProjectListItem img {
+    width: 50%;
+  }
+}
