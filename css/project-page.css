@@ -27,16 +27,35 @@
 #SplashImage {
   grid-area: SplashImage;
   display: flex;
-  flex-flow: column wrap;
 
   gap: 1.5em;
+}
+
+.VertScreenshots {
+  flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#SplashImage img {
+.HorScreenshots {
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.VertScreenshots img {
   max-width: 50%;
   height: auto;
+}
+
+.DungeonRaiderImg {
+  max-width: 30%;
+  height: fit-content;
+}
+.ScreenshotContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 #Process {
   grid-area: Process;
@@ -45,4 +64,16 @@
 #Content {
   grid-area: Content;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #MainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #WebHeader {
+    font-size: small;
+  }
 }

@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/defaultStyles.css" />
+    <link rel="stylesheet" href="../css/project-page.css" />
     <link rel="icon" href="../media/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -70,11 +71,40 @@
           </li>
         </ul>
       </nav>
-      <div id="SplashImage"></div>
+      <div id="SplashImage" class="VertScreenshots">
+        <div class="ScreenshotContainer">
+          <img
+            class="DungeonRaiderImg"
+            src="../media//Game-Screenshots/Dungeon-Raider/Screenshot-2.png"
+            alt="A screenshot of the game's shop system"
+          />
+          <caption>
+            The shop system
+          </caption>
+        </div>
+        <div class="ScreenshotContainer">
+          <img
+            class="DungeonRaiderImg"
+            src="../media/Game-Screenshots/Dungeon-Raider/Screenshot-3.png"
+            alt="A screenshot of an in progress run"
+          />
+          <caption>
+            A screenshot of an in-progress run
+          </caption>
+        </div>
+      </div>
       <div id="Game-Info">
         <div id="Project-Description">
+          <h2>Project Description</h2>
           <p>
-            Forced to fulfill a never-ending quota forced upon you by your late
+            Made over the course of a month with two teammates for the final
+            project of my IGME 106 class: Problem Solving with Data Structures &
+            Algorithms
+
+            <br />
+            <br />
+
+            Forced to fulfill a never-ending quota thrust upon you by your late
             father's debtors (you should really have your lawyers look into that
             I don't think it's legal), you descend into the magical dungeon
             filled with foul monsters but also valuable gold.
@@ -88,17 +118,52 @@
           </p>
         </div>
         <div id="Contributions">
-          I worked as the project lead as well as the main artist for the
-          majority of this project, along with contributing a lot of the code
-          for the baseline systems and the shop system present in the game.
+          <h2>Contributions</h2>
+          <ul>
+            <li>
+              Role - Project Lead
+              <ul>
+                <li>
+                  Led bi-weekly stand ups to discuss how tasks were going and if
+                  rescoping was necessary
+                </li>
+                <li>
+                  Led weekly planning meetings to decide tasks for the following
+                  sprint and decided on larger goals for the project
+                </li>
+              </ul>
+            </li>
+            <li>
+              Role - Programmer
+              <ul>
+                <li>System Implemented - Game Object Infrastructure</li>
+                <li>System Implemented - Game State System</li>
+                <li>System Implemented - UI Objects</li>
+                <li>State Implemented - Main Menu</li>
+                <li>State Implemented - Pause Menu</li>
+                <li>Mechanic Implemented - Shop</li>
+              </ul>
+            </li>
+            <li>
+              Role - Artist
+              <ul>
+                <li>Main Character Art</li>
+                <li>Level Tileset</li>
+                <li>Item Sprites</li>
+                <li>Shop Background</li>
+                <li>UI Button Sprite</li>
+                <li>Menu Splash Screens</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <div id="Process"></div>
       <div id="Content">
         <p>
-          You can play the game in your web browser right here!
+          You can download the game from itch.io right here!
           <a href="https://genuinesanta.itch.io/dungeon-raider"
-            ><i class="fa-brands fa-itch-io"></i> Dungeon-Raider</a
+            ><i class="fa-brands fa-itch-io"></i> Dungeon Raider</a
           >
         </p>
       </div>
