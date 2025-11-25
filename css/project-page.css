@@ -76,4 +76,12 @@
   #WebHeader {
     font-size: small;
   }
+
+  .VertScreenshots {
+    padding: 1em;
+  }
+
+  .DLYHImage {
+    max-width: fit-content;
+  }
 }
