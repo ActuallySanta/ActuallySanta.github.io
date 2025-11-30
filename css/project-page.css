@@ -13,7 +13,7 @@
   grid-area: Game-Info;
   display: flex;
   flex-direction: column;
-
+justify-content: center;
   gap: 1em;
 }
 
@@ -40,6 +40,12 @@
 .HorScreenshots {
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+.HorScreenshots img{
+  max-width: 45%;
+  height: auto;
 }
 
 .VertScreenshots img {
@@ -77,8 +83,14 @@
     font-size: small;
   }
 
-  .VertScreenshots {
+#SplashImage{
+  flex-direction: column;
+  width: 100%;
+}
+
+  .VertScreenshots ,.HorScreenshots {
     padding: 1em;
+    width: 100%;
   }
 
   .DLYHImage {

@@ -61,6 +61,11 @@ h3 {
 #InfoFooter li {
   list-style-type: none;
 }
+
+#InfoFooter ul{
+padding-inline-start: 0px;
+}
+
 a {
   text-decoration: none;
 }
