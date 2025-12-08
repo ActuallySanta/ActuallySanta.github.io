@@ -1,5 +1,28 @@
 h1,
-h2,
-p {
+h2 {
   text-align: center;
+}
+
+#ArticleItems {
+  background-color: #fefae0;
+  padding: 1em;
+  border-radius: 1.5em;
+}
+
+.ArticleThumbnail {
+  background-color: #faedcd;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 0.5em;
+
+  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+
+.ArticleHeader {
+  padding: 0em 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
 }

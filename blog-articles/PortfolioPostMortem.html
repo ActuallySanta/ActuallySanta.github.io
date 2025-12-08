@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Santiago-Benitez-Fernandez's Portfolio - Portfolio Website Post Mortem
+    </title>
+
+    <link rel="stylesheet" href="../css/defaultStyles.css" />
+    <link rel="stylesheet" href="../css/blog-articleStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Geo:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Geo:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Michroma&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../media/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="MainWrapper">
+      <header id="WebHeader">
+        <h1>Santiago Benitez-Fernandez</h1>
+        <h2>Blog - Portfolio Website Post Mortem</h2>
+      </header>
+
+      <nav id="NavBar">
+        <ul id="NavList">
+          <li>
+            <a href="../index.html"
+              ><i class="fa-solid fa-house"></i>
+              <span class="NavListText">Home Page</span></a
+            >
+          </li>
+          <li>
+            <a href="../projects.html"
+              ><i class="fa-solid fa-user-tie"></i>
+              <span class="NavListText">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="https://genuinesanta.itch.io"
+              ><i class="fa-brands fa-itch-io"></i>
+              <span class="NavListText">Itch.io Page</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="../media/Santiago Benitez-Fernandez Resume.pdf"
+              target="_blank"
+              ><i class="fa-solid fa-briefcase"></i>
+              <span class="NavListText">Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="../blog.html">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span class="NavListText">Blog</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="ContentArea">
+        <h1>Professional Website Post Mortem</h1>
+        <h2>12/05/2025</h2>
+
+        <h3>Introduction</h3>
+        <p>
+          This entire project originally began as a project for my Web Tech
+          Class as a task to create a "Responsive Website" based on a magazine
+          article. (You can see the original site
+          <a href="https://people.rit.edu/sb5175/235/project1/">here</a>) I was
+          really proud of what the site looked like but I was a little scared of
+          how complex the site would balloon to with how long just the main home
+          page took. Thankfully I was able to copy and paste a lot of the basic
+          html (like the header and the nav bar) along with moving a bunch of
+          the global <strong>CSS</strong> to a separate page which made the new
+          pages much quicker to make.
+        </p>
+
+        <h3>What Went Well</h3>
+        <p>
+          I was really happy with how the color pallete came out. I was initally
+          went with a color pallete more in line with the original article but
+          once I was free to modify the page to my own choices I decided to make
+          some changes and add a splash of contrast with the pastel green. I was
+          really focused on choosing soft colors that won't strain the eyes and
+          look out of place and I think I ended up with some nice colors
+        </p>
+
+        <p>
+          I am also quite proud of the little
+          <strong>Javascript</strong> function that I made for this site. It
+          wasn't anything particularly complicated but it essentially let me
+          convert any <strong>HTML</strong> element that I wanted into a button
+          that led to a separate page. This was mostly used to turn banners for
+          projects into a button to open the respective project info page. This
+          was an interesting way to utilize <strong>Javascript</strong> to make
+          smaller functions that would've been a headache to implement with base
+          <strong>HTML</strong>.
+        </p>
+
+        <h3>What Could Have Gone Better</h3>
+        <p>
+          I really don't think that I implemented some of the repeated elements
+          correctly. Elements like the Header and the Nav Bar are just copied
+          and pasted over and over again into each separate HTML page which
+          makes it a pain to update. Thankfully I was able to separate the
+          generic
+          <strong>CSS</strong> into it's own file which made it much easier to
+          reuse but the only way I saw online to do the same with
+          <strong>HTML</strong> is to use PHP which I don't know yet.
+        </p>
+        <p>
+          I am also still a newcomer to the web development space. Thankfully
+          this project didn't require a large amount of
+          <strong>Javascript</strong> but I definitely know that there was
+          plenty of cool <strong>CSS</strong> tricks that would have been nice
+          to have that I simply didn't know about or know well enough to
+          implement. I would have liked to have a nicer mobile layout that was a
+          little bit more responsive but I imagine that this website will
+          largely be viewed on a PC window instead of a mobile phone, so it
+          isn't a large priority right now.
+        </p>
+        <h3>TLDR</h3>
+        <p>
+          I'm very happy with how the portfolio page came out. I really like the
+          colors that I chose and the overall layout. I'll keep adding more
+          projects and games as they come but this serves as a good starting
+          point. That said, I'm still a newbie at web development and the page
+          still has a lot of room to grow. I plan to continue adding to this
+          site as I grow as a developer and learn new techniques and tools!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

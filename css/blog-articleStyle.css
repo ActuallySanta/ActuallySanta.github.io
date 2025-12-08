@@ -1,0 +1,11 @@
+#ContentArea h1,
+#ContentArea h2 {
+  text-align: left;
+}
+
+#ContentArea {
+  background-color: #faedcd;
+  padding: 0.5em 1.5em;
+  margin: 1em;
+  border-radius: 1em;
+}
