@@ -24,5 +24,5 @@ for (let element of GamePageIcons) {
 
 function OpenProjectPage(link) {
   console.log(link);
-  window.open(link);
+  window.open(link, "_self");
 }
