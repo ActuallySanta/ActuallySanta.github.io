@@ -9,3 +9,31 @@
   margin: 1em;
   border-radius: 1em;
 }
+
+.blogPhoto {
+  float: right;
+  width: 200px;
+  margin: 1em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photoContainer {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  float: right;
+  gap: 10px;
+  margin: 1em;
+}
+.photoContainer figure {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photoContainer img {
+  max-width: 15em;
+}
