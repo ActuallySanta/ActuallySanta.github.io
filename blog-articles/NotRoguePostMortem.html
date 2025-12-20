@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago-Benitez-Fernandez's Portfolio - NotRogue Post Mortem</title>
+
+    <link rel="stylesheet" href="../css/defaultStyles.css" />
+    <link rel="stylesheet" href="../css/blog-articleStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Geo:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Geo:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Michroma&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../media/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="MainWrapper">
+      <header id="WebHeader">
+        <h1>Santiago Benitez-Fernandez</h1>
+        <h2>Blog - NotRogue Post Mortem</h2>
+      </header>
+
+      <nav id="NavBar">
+        <ul id="NavList">
+          <li>
+            <a href="../index.html"
+              ><i class="fa-solid fa-house"></i>
+              <span class="NavListText">Home Page</span></a
+            >
+          </li>
+          <li>
+            <a href="../projects.html"
+              ><i class="fa-solid fa-user-tie"></i>
+              <span class="NavListText">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="https://genuinesanta.itch.io"
+              ><i class="fa-brands fa-itch-io"></i>
+              <span class="NavListText">Itch.io Page</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="../media/Santiago Benitez-Fernandez Resume.pdf"
+              target="_blank"
+              ><i class="fa-solid fa-briefcase"></i>
+              <span class="NavListText">Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="../blog.html">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span class="NavListText">Blog</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="ContentArea">
+        <h1>Not Rogue Post Mortem</h1>
+        <h2>12/14/2025</h2>
+
+        <h3>Introduction</h3>
+        <p>
+          This project was made as the final of 3 projects for my Web Design
+          class at RIT, IGME 235: Intro to Game Web Tech. We learned about the 3
+          big components of front end web design, that being
+          <strong>HTML</strong>, <strong>CSS</strong>, and lastly
+          <strong>Javascript</strong>. Now, with this being the last project of
+          the semester, and of the class, it was designed to test all of the
+          concepts that we had learned, but mostly to test our Javascript
+          knowledge. We were originally given access to the
+          <strong>Javascript</strong> graphics rendering API PixiJS, but I ended
+          up wanting to use just the basic DOM elements to make a game. I
+          remembered the game Universal Paperclips and liking it's minimalist
+          design, so I chose to focus on a more text based game to emulate that
+          style. I ended up making a text based roguelike, which let me focus
+          more on the programming and less on visual design.
+        </p>
+
+        <p>
+          Safe to say I learned a <strong>lot</strong> about not only
+          <strong>Javascript</strong>, but about larger software design
+          principles that I could apply to other projects that come in the
+          future. That isn't to say that it was all smooth sailing, I also
+          learned a lot of hard lessons about scope and what I could achieve
+          with the relatively little time that I had to make the project.
+        </p>
+
+        <h3>What Went Well</h3>
+        <figure class="blogPhoto">
+          <img src="../media/NotRoguePM/Dungeon-Generation.jpg" />
+          <figcaption>
+            The notes I took in the breakdown of how the dungeon generation
+            should work
+          </figcaption>
+        </figure>
+        <h4>The Dungeon Generation</h4>
+        <p>
+          I'm extremely proud of what I was able to teach myself with regards to
+          a lot of the backend and, sadly, a lot of what the player doesn't get
+          to see. One of the hardest parts was the procedurally generated
+          dungeon. I had never made any procedural generation systems by myself
+          before, I had followed some tutorials for a GameMaker studio algorithm
+          as well as one or two for Unity a long time ago but neither helped me
+          in this situation. After a lot of googling and scrolling many forum
+          threads, what ended up helping me the most was actually pulling out my
+          pocket notebook and physically writing out what I thought the steps
+          needed to be in the process itself. This process, similar to the
+          rubber ducky method for debugging, let me formalize what the steps
+          would need to be and remove the vagueness from the process. This also
+          helped immensely by giving me a clear path forward and obvious things
+          to implement. This was by no means an easy process (as you can see in
+          the picture, I almost gave up after a long night of little progress)
+          and I spent a lot of time working on making the feature functional.
+          Thankfully I getting the process to work and I was extremely proud of
+          myself for not giving up.
+        </p>
+
+        <div class="photoContainer">
+          <figure>
+            <img src="../media/NotRoguePM/Combat-Flow-1.jpg" alt="" />
+            <figcaption>
+              The first page of the breakdown of how a typical combat encounter
+              should work
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../media/NotRoguePM/Combat-Flow-2.jpg" alt="" />
+
+            <figcaption>The second page</figcaption>
+          </figure>
+        </div>
+        <h4>The Combat System</h4>
+        <p>
+          I am also happy with how the combat system turned out. This was also a
+          new one for me, since I had never made a turn based combat system
+          before, and especially not in the event based update system of a
+          website. The inital system wasn't <em>too</em> hard, with a similar
+          process to the dungeon generation I was able to quickly sort out the
+          steps each turn would need to take and within a few days I had the
+          basic system working. My only issue was that everything happened
+          instantly, the player would input an action and in the blink of an
+          eye, thanks to the computer's speed, all of the AI's actions would
+          fill up the combat log. This wasn't a particularly game breaking
+          issue, but I knew that the player experience would greatly suffer if I
+          left it as it was so I set about solving it.
+        </p>
+        <p>
+          My first thought was a timer of some kind, where the log would display
+          each message for a set amount of time and then do the next action. I
+          then came to the issue of how <strong>Javascript</strong> actually
+          operates. I was used to systems that had a constant update loop so
+          that I could just use that to count up a set amount of time but in
+          <strong>Javascript</strong>, at least to my knowledge, that kind of
+          system isn't possible without external libraries. Thankfully, in
+          hindsight, this wouldn'tve been a very good implementation since it
+          still takes the control of the reading speed out of the player's hands
+          and it would be impossible to find an amount of time that worked
+          perfectly for everyone. I ended up going with just pressing the space
+          bar to continue which presented it's own host of issues with commands
+          that were more than one word but I think I was able to at least get
+          the system functional by the time I was done.
+        </p>
+
+        <h3>What Could Have Gone Better</h3>
+        <h4>Javascript is not a Game Making Engine</h4>
+        <p>
+          To the surprise of absoutely nobody, I had a <em>very</em> difficult
+          time working with <strong>Javascript</strong> as a game making tool.
+          Obviously base <strong>JS</strong> is not a particularly suited
+          language to coding games and I found that out very quickly. While I
+          liked not having to worry about scope when referencing fields, the
+          lack of variable typing and general vagueness of the entire language
+          was a massive headache to deal with. Many of the bugs that I
+          encountered during development were due to type incompatability and
+          just passing in the wrong value. This was just never something that I
+          had to deal with when I was using something like
+          <strong>C#</strong> and <strong>Unity</strong> and took a lot of
+          getting used to. Whilst this was definitely a good learning experience
+          and I gained a lot of new knowledge on how to structure code, I don't
+          think I will be reaching for <strong>Javascript</strong> for something
+          like a game jam or personal project any time soon.
+        </p>
+        <h4>Overscoping strikes again!</h4>
+        <p>
+          For a little bit of perspective, I spent a little over 3 weeks on this
+          project. The first week I spent during my Thanksgiving break which,
+          alongside enjoying being back home with my family, I also spent a lot
+          of time working on this website. The second week was back in college
+          where I also spent a lot of time preparing for my other exams and
+          finals for other classes. Lastly, the final week was during my final
+          exams, where I had other projects and exams to do and couldn't
+          dedicate a lot of time to NotRogue. Safe to say that I had a lot on my
+          plate. With all of that in mind I'm proud of the amount of content
+          that I was able to fit into this game and still get it to a reasonably
+          functional state. That said, looking back I can see there were
+          definitely components that were either unnecessary or I should have
+          cut in order to focus on other things. Chiefly I think that I should
+          have chosen to either focus on the procedural generation or the RPG
+          system. Having both systems makes for a much more fun game but I don't
+          think that I was able to give either system enough attention to get it
+          to a state that I'm particularly happy with. Having chosen to have a
+          pregenerated map or making a procedural dungeon visualizer would have
+          let me make those systems with as much polish as possible and have had
+          prevented the need for as much crunch as I ended up needing to finish
+          the game.
+        </p>
+        <h3>TLDR</h3>
+        <p>
+          I learned a ton about <strong>Javascript</strong> and basic game
+          programming throughout this project. The dungeon generation and combat
+          systems were two systems that proved to be extremely challenging but
+          also extremely fulfilling to figure out and implement. Aside from
+          learning how to implement the two systems, I also found a new method
+          of breaking down complex problems that works for me that I plan to use
+          for future projects. That said, I have learned that
+          <strong>Javascript</strong> is not a particularly easy language to
+          program a game in and I should have taken the fact that I was learning
+          a new language alongside making the project when I was planning the
+          scope of the game since I overscoped a little bit and should've spent
+          more time polishing a smaller amount of mechanics.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

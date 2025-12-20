@@ -71,6 +71,7 @@
   max-width: 30%;
   height: fit-content;
 }
+
 .ScreenshotContainer {
   display: flex;
   flex-direction: column;
