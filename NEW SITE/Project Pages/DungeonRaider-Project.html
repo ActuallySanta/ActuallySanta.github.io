@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Don't Lose Your Head! Project Page</title>
+    <title>Dungeon Raider Project Page</title>
 
     <link
       rel="stylesheet"
@@ -114,14 +114,32 @@
     </nav>
 
     <section class="section hero is-primary is-small">
-      <h1 class="title">Don't Lose Your Head!</h1>
+      <div class="hero-body columns">
+        <div class="column is-four-fifths">
+          <h1 class="title">Dungeon Raider</h1>
+        </div>
+
+        <div class="has-text-centered column box has-background-light">
+          <h2 class="subtitle">Play the game here!</h2>
+
+          <a
+            href="https://genuinesanta.itch.io/dungeon-raider"
+            target="_blank"
+            class="is-link"
+            ><i class="fa-brands fa-itch-io"></i> Dungeon Raider</a
+          >
+        </div>
+      </div>
     </section>
+
+    <!--Tech Stack-->
     <section class="section container columns box my-6">
       <div class="column">
         <h2 class="title has-text-centered">Tech Used</h2>
         <ul class="has-text-centered">
-          <li>Unity Engine</li>
+          <li>Monogame</li>
           <li>C#</li>
+          <li>Notion</li>
           <li>Aseprite</li>
         </ul>
       </div>
@@ -129,59 +147,89 @@
         <h2 class="title has-text-centered">Skills Utilized</h2>
         <ul class="has-text-centered">
           <li>Project Management</li>
-          <li>Puzzle Design</li>
+          <li>Programming</li>
           <li>Debugging</li>
         </ul>
       </div>
     </section>
 
+    <!--Project Description-->
     <section class="section">
       <div class="container">
         <h2 class="title">Project Description</h2>
         <br />
         <p class="subtitle">
-          Don't Lose Your Head is a puzzle platformer made in a week with a team
-          of 3 other programmers and 1 artist for the 2025 Scream Jam. <br />
+          Made over the course of a month with two teammates for the final
+          project of my IGME 106 class: Problem Solving with Data Structures &
+          Algorithms
+
           <br />
-          Play as a skeleton collecting as they navigate a haunted manor
-          utilizing the fact that they can throw their head to activate
-          conveniently placed levers and buttons to collect candy for their
-          friends!
+          <br />
+
+          Forced to fulfill a never-ending quota thrust upon you by your late
+          father's debtors (you should really have your lawyers look into that I
+          don't think it's legal), you descend into the magical dungeon filled
+          with foul monsters but also valuable gold.
+
+          <br />
+          <br />
+
+          While you're down there you may encounter a mysterious shop run by a
+          shadowy figure that may sell you items and abilities in exchange for
+          some of the loot that you've collected so far...
         </p>
       </div>
     </section>
 
+    <!--Screenshots-->
     <section class="section">
       <h2 class="title">Screenshots</h2>
       <div class="columns">
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-1.png"
+              src="../Media/Game-Screenshots/Dungeon-Raider/Screenshot-1.png"
               alt=""
-              class="image is-16by9 is-small"
+              class="image is-4by3"
             />
             <figcaption class="py-4">
-              A screenshot of one of the game's puzzles
+              The title screen that appears when the game is opened, all UI
+              elements were made from scratch.
             </figcaption>
           </figure>
         </div>
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-2.png"
+              src="../Media/Game-Screenshots/Dungeon-Raider/Screenshot-2.png"
               alt=""
-              class="image is-16by9"
+              class="image is-4by3"
+            />
+            <figcaption class="py-4">
+              The shop area where the player can buy items to help them in
+              future runs using money that they accquired during their runs
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="column section">
+          <figure>
+            <img
+              src="../Media/Game-Screenshots/Dungeon-Raider/Screenshot-3.png"
+              alt=""
+              class="image is-4by3"
             />
             <figcaption class="py-4">
               The starting room where the player appears at the beginning of the
-              game
+              game. The map is fully enabled in this version and the exit door
+              is visible in the room as well, along with doors to other rooms
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
+    <!--Contributions-->
     <section class="section">
       <h2 class="title">Contributions</h2>
       <div class="columns">
@@ -192,18 +240,17 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Meetings</h3>
+                <h3 class="subtitle">Stand Ups</h3>
                 <p>
-                  Led periodic team meetings to determine tasks and rescope
-                  project
+                  Led bi-weekly stand ups to discuss how tasks were going and if
+                  rescoping was necessary
                 </p>
               </li>
               <li class="section box">
-                <h3 class="subtitle">Team Check-ins</h3>
+                <h3 class="subtitle">Design Meetings</h3>
                 <p>
-                  Coordinated with team members to make sure that everyone was
-                  able to complete tasks, and if not, how to restructure the
-                  task to make it achievable
+                  Led weekly planning meetings to decide tasks for the following
+                  sprint and decided on larger goals for the project
                 </p>
               </li>
             </ul>
@@ -217,21 +264,51 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game State - Camera System</h3>
+                <h3 class="subtitle">Game Object Infrastructure</h3>
                 <p>
-                  Made a camera system that dynamically transitions between
-                  predetermined points based on the position of the player
+                  Since the Monogame framework does not implicitly come with
+                  organizational tools like GameObjects or Scenes. I added many
+                  of these objects myself, modelling it after the Unity workflow
+                  as it was what we were most comfortable with
                 </p>
               </li>
 
               <li class="section box">
-                <h3 class="subtitle">
-                  Game State - Player Controller Refactor
-                </h3>
+                <h3 class="subtitle">Game State System</h3>
                 <p>
-                  Debugged and Reworked the previously implemented Player
-                  Controller, using a Finite State Machine to control
-                  transitions to prevent jittery movement.
+                  Created a system for transitioning between the games multiple
+                  states, those being: The main menu, the actual game state, a
+                  pause menu, the shop menu, and the game over/win menus.
+                  <br />
+                  <br />
+                  Each game state was completely separate from each other and
+                  would remain persistent across state changes
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">UI Objects</h3>
+                <p>
+                  Implemented all the UI objects used for Menus and overlays,
+                  including UI buttons, images, and text.
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Menus</h3>
+                <p>
+                  Designed all the menus in the game using the aformentioned UI
+                  objects to communicate information to the player
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Shop Mechanic</h3>
+                <p>
+                  Included a shop system where the player could spend their
+                  generated from previous runs in order to buy upgrades and
+                  buffs for their next runs, this included both passive and
+                  active items that affected the player in unique ways
                 </p>
               </li>
             </ul>
@@ -245,28 +322,43 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Main Tileset</h3>
+                <h3 class="subtitle">Player Art/Animations</h3>
                 <p>
-                  Designed a visually appealing tileset used for the level
-                  geometry of the game
+                  Drew and animated the main player character in all 4 cardinal
+                  directions and created different animations for moving,
+                  standing, and attacking
                 </p>
               </li>
+
               <li class="section box">
-                <h3 class="subtitle">Game Art - Level Element Sprites</h3>
+                <h3 class="subtitle">Main Tileset</h3>
+                <p>Designed the tile that outlines every room</p>
+              </li>
+              <li class="section box">
+                <h3 class="subtitle">Item Sprites</h3>
                 <p>
-                  Created assets for the following items in their various active
-                  and inactive states. Prioritizing simplicity and readability
-                  such that players would immediately know what the level
-                  element was
+                  Made different icons for each item that were understandable
+                  enough for the player to know it's use without having to be
+                  explained through text
                 </p>
-                <br />
-                <div class="columns container box">
-                  <p class="column">Door</p>
-                  <p class="column">Bounce Pad</p>
-                  <p class="column">Spikes</p>
-                  <p class="column">Button</p>
-                  <p class="column">Lever</p>
-                </div>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Shop Background</h3>
+                <p>
+                  Illustrated the backdrop for the shop scene, which includes a
+                  character as well as space for all the items and their
+                  descriptions to be displayed
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">UI and Menu Assets</h3>
+                <p>
+                  Created all the UI assets as well as the drawings that appear
+                  in each menu, such as the skull when the player dies, the game
+                  logo, and the campfire during the pause menu
+                </p>
               </li>
             </ul>
           </div>
