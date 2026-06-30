@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Don't Lose Your Head! Project Page</title>
+    <title>NotRogue Project Page</title>
 
     <link
       rel="stylesheet"
@@ -67,7 +67,7 @@
 
               <a href="NotRogue-Project.html" class="navbar-item"> NotRogue </a>
 
-              <a href="Project Pages/DLYH-Project.html" class="navbar-item"
+              <a href="DLYH-Project.html" class="navbar-item"
                 >Don't Lose Your Head!</a
               >
               <a href="DungeonRaider-Project.html" class="navbar-item"
@@ -121,102 +121,106 @@
     </nav>
 
     <section class="section hero is-primary is-small">
-      <h1 class="title">Don't Lose Your Head!</h1>
+      <div class="hero-body columns">
+        <div class="column is-four-fifths">
+          <h1 class="title">NotRogue</h1>
+        </div>
+
+        <div class="has-text-centered column box has-background-light">
+          <h2 class="subtitle">Play the game here!</h2>
+
+          <a
+            href="https://actuallysanta.github.io/NotRogue/"
+            target="_blank"
+            class="is-link"
+            ><i class="fa-brands fa-github"></i> NotRogue</a
+          >
+        </div>
+      </div>
     </section>
+
+    <!--Tech Stack-->
     <section class="section container columns box my-6">
       <div class="column">
         <h2 class="title has-text-centered">Tech Used</h2>
         <ul class="has-text-centered">
-          <li>Unity Engine</li>
-          <li>C#</li>
-          <li>Aseprite</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
         </ul>
       </div>
       <div class="column">
         <h2 class="title has-text-centered">Skills Utilized</h2>
         <ul class="has-text-centered">
           <li>Project Management</li>
-          <li>Puzzle Design</li>
+          <li>Programming</li>
           <li>Debugging</li>
+          <li>Web Development</li>
         </ul>
       </div>
     </section>
 
+    <!--Project Description-->
     <section class="section">
       <div class="container">
         <h2 class="title">Project Description</h2>
         <br />
         <p class="subtitle">
-          Don't Lose Your Head is a puzzle platformer made in a week with a team
-          of 3 other programmers and 1 artist for the 2025 Scream Jam. <br />
+          Created in under a month by myself for the final project of my IGME
+          235 course: Intro to Game Web Tech.
+
           <br />
-          Play as a skeleton collecting as they navigate a haunted manor
-          utilizing the fact that they can throw their head to activate
-          conveniently placed levers and buttons to collect candy for their
-          friends!
+          <br />
+
+          Descend into a procedurally generated dungeon in this text based
+          adventure! You can move from room to room, fighting the monsters that
+          lurk within and searching those rooms for lost treasure.
+
+          <br />
+          <br />
+
+          Try and survive as long as you can before your inevitable demise at
+          the hand of the various creatures while raising the
+          <em>worth</em> of your inventory as high as possible!
         </p>
       </div>
     </section>
 
+    <!--Screenshots-->
     <section class="section">
       <h2 class="title">Screenshots</h2>
       <div class="columns">
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-1.png"
+              src="../Media/Game-Screenshots/NotRogue/Starting-Screen.png"
               alt=""
-              class="image is-16by9 is-small"
+              class="image is-16by9"
             />
             <figcaption class="py-4">
-              A screenshot of one of the game's puzzles
+              The initial screen that the player sees when loading up the page
             </figcaption>
           </figure>
         </div>
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-2.png"
+              src="../Media/Game-Screenshots/NotRogue/InProgress-Screen.png"
               alt=""
               class="image is-16by9"
             />
             <figcaption class="py-4">
-              The starting room where the player appears at the beginning of the
-              game
+              The screenshot of an in progress run
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
+    <!--Contributions-->
     <section class="section">
       <h2 class="title">Contributions</h2>
       <div class="columns">
-        <div class="card column">
-          <header class="card-header">
-            <h3 class="card-header-title">Project Lead</h3>
-          </header>
-          <div class="card-content">
-            <ul>
-              <li class="section box">
-                <h3 class="subtitle">Meetings</h3>
-                <p>
-                  Led periodic team meetings to determine tasks and rescope
-                  project
-                </p>
-              </li>
-              <li class="section box">
-                <h3 class="subtitle">Team Check-ins</h3>
-                <p>
-                  Coordinated with team members to make sure that everyone was
-                  able to complete tasks, and if not, how to restructure the
-                  task to make it achievable
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
         <div class="card column">
           <header class="card-header">
             <h3 class="card-header-title">Programmer</h3>
@@ -224,56 +228,52 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game State - Camera System</h3>
+                <h3 class="subtitle">Webpage Created</h3>
                 <p>
-                  Made a camera system that dynamically transitions between
-                  predetermined points based on the position of the player
+                  Designed the entire page using a combination of HTML, CSS, and
+                  Javascript. No external packages were used, per class
+                  assignment requirements.
                 </p>
               </li>
 
               <li class="section box">
                 <h3 class="subtitle">
-                  Game State - Player Controller Refactor
+                  Random Walk Algorithm for Dungeon Generation
                 </h3>
                 <p>
-                  Debugged and Reworked the previously implemented Player
-                  Controller, using a Finite State Machine to control
-                  transitions to prevent jittery movement.
+                  Created my own interpretation of the Random Walk Algorithm
+                  that dynamically creates rooms with variable enemies and
+                  treasure for the player to find.
                 </p>
               </li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="card column">
-          <header class="card-header">
-            <h3 class="card-header-title">Artist</h3>
-          </header>
-          <div class="card-content">
-            <ul>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Main Tileset</h3>
+                <h3 class="subtitle">
+                  Turn-Based Combat between player and deterministic AI
+                </h3>
                 <p>
-                  Designed a visually appealing tileset used for the level
-                  geometry of the game
+                  Made an event based combat system that would display to the
+                  console, including spots to wait for the player to see what
+                  had happened and respond with their own actions.
+
+                  <br />
+                  <br />
+                  Also implemented a basic for of deterministic AI that the
+                  enemies would use to decide whether to attack or not based on
+                  probability.
                 </p>
               </li>
+
               <li class="section box">
-                <h3 class="subtitle">Game Art - Level Element Sprites</h3>
+                <h3 class="subtitle">Text Parsing System</h3>
                 <p>
-                  Created assets for the following items in their various active
-                  and inactive states. Prioritizing simplicity and readability
-                  such that players would immediately know what the level
-                  element was
+                  Created a text parsing system that would discern actions from
+                  a player input field, which also allowed for more context
+                  relevant commands such as movement to be determined by
+                  alternative phrasing (ie. instead of issuing a move command
+                  and then a directional command, the user can just say move
+                  left and the system will combine both commands)
                 </p>
-                <br />
-                <div class="columns container box">
-                  <p class="column">Door</p>
-                  <p class="column">Bounce Pad</p>
-                  <p class="column">Spikes</p>
-                  <p class="column">Button</p>
-                  <p class="column">Lever</p>
-                </div>
               </li>
             </ul>
           </div>
