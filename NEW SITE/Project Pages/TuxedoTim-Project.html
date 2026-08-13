@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Don't Lose Your Head! Project Page</title>
+    <title>Tuxedo Tim: Hands in His Resignation Project Page</title>
 
     <link
       rel="stylesheet"
@@ -123,7 +123,7 @@
     <section class="section hero is-primary is-small">
       <div class="hero-body columns">
         <div class="column is-four-fifths">
-          <h1 class="title">Don't Lose Your Head!</h1>
+          <h1 class="title">Tuxedo Tim: Hands in His Resignation</h1>
         </div>
 
         <div class="has-text-centered column box has-background-light">
@@ -133,7 +133,8 @@
             href="https://genuinesanta.itch.io/dont-lose-your-head"
             target="_blank"
             class="is-link"
-            ><i class="fa-brands fa-itch-io"></i> Don't Lose Your Head!</a
+            ><i class="fa-brands fa-itch-io"></i> Tuxedo Tim: Hands in His
+            Resignation</a
           >
         </div>
       </div>
@@ -150,8 +151,10 @@
       <div class="column">
         <h2 class="title has-text-centered">Skills Utilized</h2>
         <ul class="has-text-centered">
-          <li>Project Management</li>
-          <li>Puzzle Design</li>
+          <li>Project/Time Management</li>
+          <li>Sound Design</li>
+          <li>UI Design</li>
+          <li>Level/Interaction Design</li>
           <li>Debugging</li>
         </ul>
       </div>
@@ -161,15 +164,43 @@
       <div class="container">
         <h2 class="title">Project Description</h2>
         <br />
-        <p class="subtitle">
-          Don't Lose Your Head is a puzzle platformer made in a week with a team
-          of 3 other programmers and 1 artist for the 2025 Scream Jam. <br />
+        <div class="subtitle">
+          <p>
+            Tuxedo Tim is a 2D sidescrolling action Run N' Gun that I made solo
+            for the Spring 2026 CSH Game Jam using Unity and C#
+            <br />
+            <br />
+            You are just another nameless drone at Big Company, your only
+            defining trait is your dapper attire. There are a million different
+            people doing the same thing that you are. Over and over, day in and
+            day out...
+          </p>
           <br />
-          Play as a skeleton collecting as they navigate a haunted manor
-          utilizing the fact that they can throw their head to activate
-          conveniently placed levers and buttons to collect candy for their
-          friends!
-        </p>
+          <h3 class="is-size-3">Until You Get Sick Of It.</h3>
+          <br />
+          <p>
+            One day, you decide that you've had enough, you want to see the
+            other aspects of life. Feel wind on your face that doesn't just come
+            from your desktop fan. Drink coffee that isn't burnt to a crisp. So
+            you write up your letter of resignation and go into The Building to
+            hand it to your supervisor. Your boss sees you coming in and,
+            worried for a rebellion and the uprising of all the workers beneath
+            them, activates the Super Evil Company Mind Control, that was
+            implanted into every Big Company employee beneath a certain level.
+            Everyone, of course, but you. Your shirt is so crisp and well
+            starched that the radio waves are blocked, failing to enable your
+            Super Evil Company Mind Control Chip.
+          </p>
+          <br />
+          <h3 class="is-size-3">Your Task Now...</h3>
+          <br />
+          <p>
+            You must navigate the endless monotone floors of Big Company and
+            deliver your resignation letter like a decent gentleman. There will
+            of course be those sent in to stop you, but that's why you brought
+            your trusty rifle from home...
+          </p>
+        </div>
       </div>
     </section>
 
@@ -179,25 +210,24 @@
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-1.png"
+              src="../Media/Game-Screenshots/Tuxedo-TIm/Tuxedo Tim image 1.png"
               alt=""
               class="image is-16by9 is-small"
             />
             <figcaption class="py-4">
-              A screenshot of one of the game's puzzles
+              A screenshot of the game's tutorial, explaining the cover mechanic
             </figcaption>
           </figure>
         </div>
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-2.png"
+              src="../Media/Game-Screenshots/Tuxedo-TIm/Tuxedo Tim image 2.png"
               alt=""
               class="image is-16by9"
             />
             <figcaption class="py-4">
-              The starting room where the player appears at the beginning of the
-              game
+              The screenshot of a typical enemy encounter in the game
             </figcaption>
           </figure>
         </div>
@@ -209,51 +239,41 @@
       <div class="columns">
         <div class="card column">
           <header class="card-header">
-            <h3 class="card-header-title">Project Lead</h3>
-          </header>
-          <div class="card-content">
-            <ul>
-              <li class="section box">
-                <h3 class="subtitle">Meetings</h3>
-                <p>
-                  Led periodic team meetings to determine tasks and rescope
-                  project
-                </p>
-              </li>
-              <li class="section box">
-                <h3 class="subtitle">Team Check-ins</h3>
-                <p>
-                  Coordinated with team members to make sure that everyone was
-                  able to complete tasks, and if not, how to restructure the
-                  task to make it achievable
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card column">
-          <header class="card-header">
             <h3 class="card-header-title">Programmer</h3>
           </header>
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game State - Camera System</h3>
+                <h3 class="subtitle">Game System - Door Transistion System</h3>
                 <p>
-                  Made a camera system that dynamically transitions between
-                  predetermined points based on the position of the player
+                  Created a system of door objects that can transitions from
+                  point to point in the level, used to connect different rooms
+                  and enemy encounters.
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Game System - Enemy AI</h3>
+                <p>
+                  Implemented a form of determenistic AI that gathers input
+                  using various raycasts and checks to decide the state that the
+                  individual agent should inhabit. Enemy can switch from a
+                  detecting and chase state to attacking as well as a hurt and
+                  dead state when attacked by the player.
                 </p>
               </li>
 
               <li class="section box">
                 <h3 class="subtitle">
-                  Game State - Player Controller Refactor
+                  Game System - Player Controller and Combat
                 </h3>
                 <p>
-                  Debugged and Reworked the previously implemented Player
-                  Controller, using a Finite State Machine to control
-                  transitions to prevent jittery movement.
+                  Designed the player controller and combat system from scratch
+                  for the specific time frame and scope of this project. This
+                  included a unique cover mechanic that was differnt from other
+                  side scrolling platformers. Made sure not to over engineer the
+                  system for unnecessary use cases that would have bloated the
+                  project to better manage time.
                 </p>
               </li>
             </ul>
@@ -267,28 +287,44 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Main Tileset</h3>
+                <h3 class="subtitle">Game Art - Character Art</h3>
                 <p>
-                  Designed a visually appealing tileset used for the level
-                  geometry of the game
+                  Created original artwork for the main character and
+                  supplemented the art for the enemies by modifying assets from
+                  a publicly available asset pack to expedite the art process so
+                  that I could focus on the programming.
                 </p>
               </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card column">
+          <header class="card-header">
+            <h3 class="card-header-title">Sound Design</h3>
+          </header>
+          <div class="card-content">
+            <ul>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Level Element Sprites</h3>
+                <h3 class="subtitle">Game Audio - Sound Effects</h3>
                 <p>
-                  Created assets for the following items in their various active
-                  and inactive states. Prioritizing simplicity and readability
-                  such that players would immediately know what the level
-                  element was
+                  Used free and open source sound effects from various platforms
+                  like Pixabay and Freesound.org in order to add various
+                  immersive sound effects to the game, both in actual gameplay
+                  and in UI.
                 </p>
-                <br />
-                <div class="columns container box">
-                  <p class="column">Door</p>
-                  <p class="column">Bounce Pad</p>
-                  <p class="column">Spikes</p>
-                  <p class="column">Button</p>
-                  <p class="column">Lever</p>
-                </div>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Game Audio - Background Music</h3>
+                <p>
+                  Used free and open source sound effects from
+                  RoyaltyFreeMusicLibrary in order to add a unique background
+                  tune that incentivized the player to engage in the gameplay in
+                  the way that I wanted them to. This meant using a more intense
+                  song to help make the player act more aggressively, which was
+                  the intended gameplay experience
+                </p>
               </li>
             </ul>
           </div>
