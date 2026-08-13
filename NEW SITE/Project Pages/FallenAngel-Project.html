@@ -59,21 +59,25 @@
             <a class="navbar-link"> Projects </a>
 
             <div class="navbar-dropdown">
-              <a href="" class="navbar-item"> Fallen Angel: Revenge Tour </a>
-              <a href="" class="navbar-item"> Ice Taxi </a>
-              <a href="" class="navbar-item">
+              <a href="FallenAngel-Project.html" class="navbar-item">
+                Fallen Angel: Revenge Tour
+              </a>
+              <a href="IceTaxi-Project.html" class="navbar-item"> Ice Taxi </a>
+              <a href="TuxedoTim-Project.html" class="navbar-item">
                 Tuxedo Tim: Hands In His Resignation
               </a>
 
               <a href="NotRogue-Project.html" class="navbar-item"> NotRogue </a>
 
-              <a href="Project Pages/DLYH-Project.html" class="navbar-item"
+              <a href="DLYH-Project.html" class="navbar-item"
                 >Don't Lose Your Head!</a
               >
               <a href="DungeonRaider-Project.html" class="navbar-item"
                 >Dungeon Raider</a
               >
-              <a href="" class="navbar-item">Blood Money</a>
+              <a href="BloodMoney-Project.html" class="navbar-item"
+                >Blood Money</a
+              >
             </div>
           </div>
         </div>
@@ -146,6 +150,7 @@
           <li>C#</li>
           <li>GD Script</li>
           <li>Trenchbroom</li>
+          <li>Audacity</li>
         </ul>
       </div>
       <div class="column">
@@ -172,7 +177,8 @@
           <br />
           Play as Satan on a crash course with the Lord as he tries to kill
           every angel in Heaven before they can take him down. Every time that
-          you die
+          you die, recieve boons to improve some of your stats and get back into
+          the fray!
         </p>
       </div>
     </section>
@@ -183,25 +189,24 @@
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-1.png"
+              src="../Media/Game-Screenshots/FallenAngel-RevengeTour/FallenAngel-Screenshot1.png"
               alt=""
               class="image is-16by9 is-small"
             />
             <figcaption class="py-4">
-              A screenshot of one of the game's puzzles
+              A screenshot of the ranged enemy in game
             </figcaption>
           </figure>
         </div>
         <div class="column section">
           <figure>
             <img
-              src="../Media/Game-Screenshots/DLYH/Screenshot-2.png"
+              src="../Media/Game-Screenshots/FallenAngel-RevengeTour/FallenAngel-Screenshot2.png"
               alt=""
               class="image is-16by9"
             />
             <figcaption class="py-4">
-              The starting room where the player appears at the beginning of the
-              game
+              The typical enemy encounter in one of the pregenerated rooms
             </figcaption>
           </figure>
         </div>
@@ -221,7 +226,9 @@
                 <h3 class="subtitle">Meetings</h3>
                 <p>
                   Led periodic team meetings to determine tasks and rescope
-                  project
+                  project, this also involved restructuring how we held meeting
+                  after recieving feedback from teammates to better accomodate
+                  our schedules during the game jam.
                 </p>
               </li>
               <li class="section box">
@@ -229,7 +236,9 @@
                 <p>
                   Coordinated with team members to make sure that everyone was
                   able to complete tasks, and if not, how to restructure the
-                  task to make it achievable
+                  task to make it achievable. Also worked with our artist to
+                  ensure that the unique visual identity was correctly expressed
+                  in game.
                 </p>
               </li>
             </ul>
@@ -243,21 +252,36 @@
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game State - Camera System</h3>
+                <h3 class="subtitle">Game System - Dungeon Generation</h3>
                 <p>
-                  Made a camera system that dynamically transitions between
-                  predetermined points based on the position of the player
+                  Modified an existing 2D random walk algorithim implementation
+                  to work in 3D and with our specific needs, which including
+                  adding a way for doors to be procedurally added in and being
+                  able to choose from a pool of different rooms per room type.
+                  This involved using bit-packing in integers to encode
+                  information such as where the doors would need to be placed
+                  and what kind of room it was.
                 </p>
               </li>
 
               <li class="section box">
-                <h3 class="subtitle">
-                  Game State - Player Controller Refactor
-                </h3>
+                <h3 class="subtitle">Game System - Player Upgrade Mechanic</h3>
                 <p>
-                  Debugged and Reworked the previously implemented Player
-                  Controller, using a Finite State Machine to control
-                  transitions to prevent jittery movement.
+                  Created the entire system surrounding the central gameplay
+                  mechanic of the player being able to upgrade their stats after
+                  each death. Which included making the menu itself that allowed
+                  the player to interact with the system.
+                </p>
+              </li>
+
+              <li class="section box">
+                <h3 class="subtitle">Game System - Menus/UI</h3>
+                <p>
+                  Designed and implemented all of the menus in the game.
+                  Highlights of this include making the main menu, which has an
+                  animated cursor pointing to the currently selected button
+                  which involved working with the different units of screen
+                  space as well as in game space.
                 </p>
               </li>
             </ul>
@@ -266,33 +290,26 @@
 
         <div class="card column">
           <header class="card-header">
-            <h3 class="card-header-title">Artist</h3>
+            <h3 class="card-header-title">Asset Designer</h3>
           </header>
           <div class="card-content">
             <ul>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Main Tileset</h3>
+                <h3 class="subtitle">Level Design - Rooms</h3>
                 <p>
-                  Designed a visually appealing tileset used for the level
-                  geometry of the game
+                  Used Trenchbroom and Qodot plugin in to design rooms to be
+                  picked by the dungeon generation system. This involved
+                  learning both how to implement custom entities in Trenchbroom
+                  as well as how to use those rooms back in the Godot Engine.
                 </p>
               </li>
               <li class="section box">
-                <h3 class="subtitle">Game Art - Level Element Sprites</h3>
+                <h3 class="subtitle">Sound Design - Sound Effect mixing</h3>
                 <p>
-                  Created assets for the following items in their various active
-                  and inactive states. Prioritizing simplicity and readability
-                  such that players would immediately know what the level
-                  element was
+                  Using Audacity, modified prexisting sound effects from sites
+                  like Pixabay to make them more demonic and rougher in general
+                  to keep in line with the mentality of the Noise Jam.
                 </p>
-                <br />
-                <div class="columns container box">
-                  <p class="column">Door</p>
-                  <p class="column">Bounce Pad</p>
-                  <p class="column">Spikes</p>
-                  <p class="column">Button</p>
-                  <p class="column">Lever</p>
-                </div>
               </li>
             </ul>
           </div>
