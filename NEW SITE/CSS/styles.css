@@ -1,0 +1,43 @@
+@import url(https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css);
+
+/*
+ Created with Simple Bulma Theme Color Picker (https://www.mobzystems.com/online/a-simple-bulma-theme-color-picker/).
+ To change: use the JSON below to import your theme there
+
+{ "primary": "#d4a373", "link": "#3b6341", "info": "#209cee", "success": "#23d160", "warning": "#ffdd57", "danger": "#ff3860",
+"light": "#e8be96", "dark": "#79947d", "black": "#435245","white": "#fefae0" }
+
+*/
+
+/* Bulma overrides */
+:root {
+  /* primary: #d4a373 (customized) */
+  --bulma-primary-h: 30deg;
+  --bulma-primary-s: 53%;
+  --bulma-primary-l: 64.1%;
+
+  /* link: #3b6341 (customized) */
+  --bulma-link-h: 129deg;
+  --bulma-link-s: 25.3%;
+  --bulma-link-l: 31%;
+
+  /* light: #e8be96 (customized) */
+  --bulma-light-h: 29deg;
+  --bulma-light-s: 64.1%;
+  --bulma-light-l: 74.9%;
+
+  /* dark: #79947d (customized) */
+  --bulma-dark-h: 129deg;
+  --bulma-dark-s: 11.2%;
+  --bulma-dark-l: 52.7%;
+
+  /* black: #435245 (customized) */
+  --bulma-black-h: 128deg;
+  --bulma-black-s: 10.1%;
+  --bulma-black-l: 29.2%;
+
+  /* white: #fefae0 (customized) */
+  --bulma-white-h: 52deg;
+  --bulma-white-s: 93.8%;
+  --bulma-white-l: 93.7%;
+}
