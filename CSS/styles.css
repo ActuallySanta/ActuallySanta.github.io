@@ -54,6 +54,16 @@
     align-items: stretch;
   }
 
+  .navbar-menu .navbar-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-menu .navbar-end .navbar-item {
+    width: auto;
+  }
+
   .navbar-menu .button,
   .card-footer-item {
     width: 100%;
