@@ -53,10 +53,18 @@
         <div class="navbar-start">
           <a class="navbar-item" href="../index.html"> Home </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> Projects </a>
+          <div id="projects-dropdown" class="navbar-item has-dropdown is-hoverable">
+            <button
+              id="projects-toggle"
+              class="navbar-link"
+              type="button"
+              aria-expanded="false"
+              aria-controls="projects-menu"
+            >
+              Projects
+            </button>
 
-            <div class="navbar-dropdown">
+            <div id="projects-menu" class="navbar-dropdown">
               <a href="FallenAngel-Project.html" class="navbar-item">
                 Fallen Angel: Revenge Tour
               </a>

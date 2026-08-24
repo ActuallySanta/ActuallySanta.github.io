@@ -92,6 +92,24 @@
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar-item.has-dropdown .navbar-dropdown {
+    display: none;
+  }
+
+  .navbar-item.has-dropdown.is-active .navbar-dropdown {
+    display: block;
+  }
+
+  #projects-toggle::after {
+    transition: transform 0.2s ease;
+  }
+
+  #projects-dropdown.is-active #projects-toggle::after {
+    transform: rotate(-135deg) !important;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .hero .profile-hero {
     align-items: center;
