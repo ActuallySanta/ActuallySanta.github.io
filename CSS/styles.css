@@ -81,3 +81,32 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .hero .profile-hero {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .profile-hero .media-left {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .profile-hero-text {
+    margin-top: 1rem;
+  }
+
+  .profile-hero .column {
+    flex-basis: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .profile-hero .title.is-1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+}
