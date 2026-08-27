@@ -8,6 +8,24 @@ const setProjectsDropdownState = (isOpen) => {
   projectsToggle.setAttribute("aria-expanded", String(isOpen));
 };
 
+const equalizeProjectCards = () => {
+  const projectCards = document.querySelectorAll(
+    ".featured-projects-grid .card, .project-grid .card",
+  );
+
+  projectCards.forEach((card) => {
+    card.style.height = "auto";
+  });
+
+  const tallestCard = Math.max(
+    ...Array.from(projectCards, (card) => card.offsetHeight),
+  );
+
+  projectCards.forEach((card) => {
+    card.style.height = `${tallestCard}px`;
+  });
+};
+
 burgerIcon.addEventListener("click", () => {
   navbarMenu.classList.toggle("is-active");
   burgerIcon.classList.toggle("is-active");
@@ -39,3 +57,6 @@ document.addEventListener("keydown", (event) => {
     setProjectsDropdownState(false);
   }
 });
+
+window.addEventListener("load", equalizeProjectCards);
+window.addEventListener("resize", equalizeProjectCards);
