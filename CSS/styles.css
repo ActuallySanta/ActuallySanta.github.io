@@ -48,6 +48,10 @@
     padding-right: 1rem;
   }
 
+  .project-section-title {
+    font-size: 1.5rem;
+  }
+
   .navbar-menu .buttons,
   .card-footer {
     flex-direction: column;
@@ -107,6 +111,100 @@
 
   #projects-dropdown.is-active #projects-toggle::after {
     transform: rotate(-135deg) !important;
+  }
+}
+
+.project-grid .grid {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.project-grid .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featured-projects-grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid .card-content,
+.featured-projects-grid .card-content {
+  flex-grow: 1;
+}
+
+.featured-projects-grid {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-projects-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  justify-content: center;
+}
+
+.featured-projects-grid .card {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .featured-projects-grid {
+    max-width: none;
+  }
+
+  .featured-projects-grid .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid .card,
+  .featured-projects-grid .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    height: 100%;
+  }
+
+  .project-grid .card-image,
+  .featured-projects-grid .card-image {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    height: 100%;
+  }
+
+  .project-grid .card-image .image,
+  .featured-projects-grid .card-image .image,
+  .project-grid .card-image img,
+  .featured-projects-grid .card-image img {
+    height: 100%;
+  }
+
+  .project-grid .card-image img,
+  .featured-projects-grid .card-image img {
+    object-fit: cover;
+  }
+
+  .project-grid .card-header,
+  .featured-projects-grid .card-header,
+  .project-grid .card-content,
+  .featured-projects-grid .card-content,
+  .project-grid .card-footer,
+  .featured-projects-grid .card-footer {
+    grid-column: 2;
+  }
+
+  .project-grid .card-header,
+  .featured-projects-grid .card-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .featured-projects-grid .card {
+    height: auto;
   }
 }
 
