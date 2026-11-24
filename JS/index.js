@@ -8,22 +8,27 @@ const setProjectsDropdownState = (isOpen) => {
   projectsToggle.setAttribute("aria-expanded", String(isOpen));
 };
 
+// Equalize card heights within each grid separately, so the larger
+// featured cards don't stretch the "Other Projects" cards.
 const equalizeProjectCards = () => {
-  const projectCards = document.querySelectorAll(
-    ".featured-projects-grid .card, .project-grid .card",
-  );
+  document
+    .querySelectorAll(".featured-projects-grid, .project-grid")
+    .forEach((grid) => {
+      const projectCards = grid.querySelectorAll(".card");
+      if (projectCards.length === 0) return;
 
-  projectCards.forEach((card) => {
-    card.style.height = "auto";
-  });
+      projectCards.forEach((card) => {
+        card.style.height = "auto";
+      });
 
-  const tallestCard = Math.max(
-    ...Array.from(projectCards, (card) => card.offsetHeight),
-  );
+      const tallestCard = Math.max(
+        ...Array.from(projectCards, (card) => card.offsetHeight),
+      );
 
-  projectCards.forEach((card) => {
-    card.style.height = `${tallestCard}px`;
-  });
+      projectCards.forEach((card) => {
+        card.style.height = `${tallestCard}px`;
+      });
+    });
 };
 
 burgerIcon.addEventListener("click", () => {
