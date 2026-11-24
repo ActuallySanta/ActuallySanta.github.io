@@ -1,0 +1,5 @@
+# Local-only files (screenshots, notes) that should not be published
+_local/
+
+# Claude Code local config (preview server settings)
+.claude/
